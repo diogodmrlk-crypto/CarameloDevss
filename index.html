@@ -366,7 +366,8 @@ async function obfuscate(){
     const encoded = toBase64(script);
     const hash = await sha256(script);
 
-    const final = `
+    const final = ` 
+    Caramelodevs obfuscate
 local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
 local function decode(data)
     data = data:gsub('[^'..b..'=]', '')
